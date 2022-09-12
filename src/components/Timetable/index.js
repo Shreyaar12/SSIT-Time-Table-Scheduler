@@ -2,12 +2,13 @@ import "./timetable.css";
 import React, { useEffect, useState } from "react";
 import { data } from "./data";
 export default function App() {
+  // Creating an array for all the slots user selects
   let [selectedArr, setSelectedArr] = useState([]);
 
   useEffect(() => {
     console.log(selectedArr, "slec");
   }, [selectedArr]);
-
+  //handle the slot selection by creating a new filtered array
   const handleSelectElement = (elem_name) => {
     if (selectedArr.includes(elem_name)) {
       const filter_arr = selectedArr.filter((elem) => elem !== elem_name);
@@ -16,17 +17,16 @@ export default function App() {
     }
     setSelectedArr([...selectedArr, elem_name]);
   };
-
+//selected slots to look like
   const selectedCellStyle = {
     border: "1px solid ",
     cursor: "pointer",
     backgroundColor: "#9698ed",
     //f8a102 same color theme as the rest
   };
-
+// all cells to look like
   const unselectedCellStyle = {
     backgroundColor: "#F9CDAD",
-
     borderStyle: "solid",
     borderWidth: "1px",
     fontFamily: "Arial sans-serif",
