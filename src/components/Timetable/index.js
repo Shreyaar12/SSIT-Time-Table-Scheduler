@@ -74,7 +74,7 @@ export default function App() {
             <td className="tg-zfe6">
               12:35 PM<p>to</p>1:25 PM
             </td>
-            <td className="tg-zfe6"></td>
+            {/* <td className="tg-zfe6"></td> */}
             <td className="tg-zfe6">
               2:00 PM <p>to </p>2:50 PM
             </td>
@@ -121,7 +121,8 @@ export default function App() {
             <td className="tg-zfe6">
               12:30 PM <p>to </p>1:20 PM
             </td>
-            <td className="tg-f66q"></td>
+            {/* Lunch timings */}
+            {/* <td className="tg-f66q"></td> */}
             <td className="tg-zfe6">
               2:00 PM<p>to </p>2:50 PM
             </td>
