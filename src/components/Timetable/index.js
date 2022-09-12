@@ -1,4 +1,3 @@
-
 import "./timetable.css";
 import React, { useEffect, useState } from "react";
 import { data } from "./data";
@@ -21,34 +20,34 @@ export default function App() {
   const selectedCellStyle = {
     border: "1px solid ",
     cursor: "pointer",
-    backgroundColor: "#9698ed"
+    backgroundColor: "#9698ed",
     //f8a102 same color theme as the rest
   };
 
   const unselectedCellStyle = {
-    backgroundColor:"#F9CDAD",
-   
-    borderStyle:"solid",
-    borderWidth:"1px",
-  fontFamily:"Arial sans-serif",
-  fontSize:"14px",
-  overflow:"hidden",
-  padding: "20px 20px",
-  wordBreak:"normal",
-    // border: "1px solid ",
+    backgroundColor: "#F9CDAD",
+
+    borderStyle: "solid",
+    borderWidth: "1px",
+    fontFamily: "Arial sans-serif",
+    fontSize: "14px",
+    overflow: "hidden",
+    padding: "20px 20px",
+    wordBreak: "normal",
+
     cursor: "pointer",
-    // backgroundColor: "white"
-    borderColor:"#fe996b",
-    color:"#002b36",
-    textAlign:"left",
-    verticalAlign:"top"
+
+    borderColor: "#fe996b",
+    color: "#002b36",
+    textAlign: "left",
+    verticalAlign: "top",
   };
 
   return (
     <div className="App">
       <table className="tg">
         <thead>
-        <tr>
+          <tr>
             <td className="tg-rwmj">
               <span style={{ fontWeight: "bold" }}>THEORY </span>
               <p>
@@ -97,7 +96,6 @@ export default function App() {
             </td>
           </tr>
           <tr>
-
             <td className="tg-rwmj">
               <span style={{ fontWeight: "bold" }}>LAB </span>
               <p>
@@ -143,7 +141,6 @@ export default function App() {
               6:30 PM <p>to </p>7:20 PM
             </td>
           </tr>
-          
         </thead>
         <tbody>
           {data.map((row) => (
@@ -158,15 +155,14 @@ export default function App() {
                     selectedArr.includes(cell)
                       ? selectedCellStyle
                       : unselectedCellStyle
-                  } className="tg-td0e"
+                  }
+                  className="tg-td0e"
                 >
                   {cell}
                 </td>
               ))}
             </tr>
           ))}
-
-       
         </tbody>
       </table>
     </div>
