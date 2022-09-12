@@ -46,6 +46,7 @@ export default function App() {
   return (
     <div className="App">
       <table className="tg">
+        {/* table beginning */}
         <thead>
           <tr>
             <td className="tg-rwmj">
@@ -54,9 +55,10 @@ export default function App() {
                 <span style={{ fontWeight: "bold" }}>HOURS</span>
               </p>
             </td>
+            {/* Timings for all slots  */}
             <td className="tg-zfe6">
-              {" "}
-              8:00 AM <p>to </p>8:50 AM{" "}
+             
+              8:00 AM <p>to </p>8:50 AM
             </td>
             <td className="tg-zfe6">
               8:55 AM<p>to </p>9:45 AM
@@ -143,6 +145,7 @@ export default function App() {
           </tr>
         </thead>
         <tbody>
+          {/* All slots to be traversed and pulled from the array of objects data in data.js */}
           {data.map((row) => (
             <tr>
                <td className="tg-rwmj"><span  style={{fontWeight:"bold"}}>{row.day}</span></td>
@@ -153,6 +156,7 @@ export default function App() {
                     handleSelectElement(cell);
                   }}
                   style={
+                    // check if the cell is selected or not and accordingly apply the style
                     selectedArr.includes(cell)
                       ? selectedCellStyle
                       : unselectedCellStyle
