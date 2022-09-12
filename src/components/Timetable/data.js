@@ -8,7 +8,7 @@ export const data = [
           "TB1/L4",
           "TG1/L5",
           "S11/L6",
-          "L",
+          
           "A2/L31",
           "F2/L32",
           "D2/L33",
@@ -27,7 +27,7 @@ export const data = [
         "TC1/L10",
         "TAA1/L11",
         "L12",
-        "U",
+      
         "B2/L37",
         "G2/L38",
         "E2/L39",
@@ -46,7 +46,7 @@ export const data = [
         "TD1/L16",
         "TBB1/L17",
         "L18",
-        "N",
+      
         "C2/L43",
         "A2/L44",
         "F2/L45",
@@ -66,7 +66,7 @@ export const data = [
         "TE1/L22",
         "TCC1/L23",
         "L24",
-        "C",
+  
         "D2/L49",
         "B2/L50",
         "G2/L51",
@@ -86,7 +86,7 @@ export const data = [
         "TF1/L28",
         "TDD1/L29",
         "S15/L30",
-        "H",
+     
         "E2/L55",
         "C2/L56",
         "TA2/L57",
