@@ -145,7 +145,8 @@ export default function App() {
         <tbody>
           {data.map((row) => (
             <tr>
-              <td className="tg-rwmj">{row.day} </td>
+               <td className="tg-rwmj"><span  style={{fontWeight:"bold"}}>{row.day}</span></td>
+             
               {row.list.map((cell) => (
                 <td
                   onClick={() => {
