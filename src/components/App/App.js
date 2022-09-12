@@ -24,6 +24,8 @@ import Homepage from '../Homepage/Homepage';
 import Navbar from "./Navbar";
 import Login from "../Login/Login";
 import Page404 from "../page404/Page404";
+import Timetable from "../Timetable/index";
+
 // import Page404 from './App/Page404';
 // import {
 //    Homepage,
@@ -78,6 +80,8 @@ function App(props) {
         {/* //something passed to home for that only props is there * * */}
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<Page404 />} />
+        <Route path="/timetable" element={<Timetable />}/>
+
       </Routes>
     </div>
 
